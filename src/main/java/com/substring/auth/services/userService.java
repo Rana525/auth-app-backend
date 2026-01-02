@@ -13,8 +13,11 @@ public interface userService {
     UserDto updateUser(UserDto userDto, String userId);
 
 //    Delete User
-    UserDto deleteUser(String userId);
+    void deleteUser(String userId);
 
 //    Get User by Id
     UserDto getUserById(String userId);
+
+//    Get All User
+    Iterable<UserDto> getAllUsers();
 }
